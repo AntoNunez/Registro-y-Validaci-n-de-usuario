@@ -1,26 +1,20 @@
-import React, { useContext } from "react";
-import { Context } from "../store/appContext";
-import rigoImageUrl from "../../img/rigo-baby.jpg";
-import "../../styles/home.css";
+import React from "react";
+import FlowerImageUrl from "../../img/flower.jpg";
 
 export const Home = () => {
-	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-			<div className="alert alert-info">
-				{store.message || "Loading message from the backend (make sure your python backend is running)..."}
+		<div className="container">
+			<div className="card text m-3">
+				<img src={FlowerImageUrl} className="rounded" />
+				<div className="card-img-overlay">
+					<h5 className="card-title text-white mt-5">Registrate</h5>
+					<p className="card-text text-white">Esta pagina se realizo con el fin de probar la autenticación de usuarios.</p>
+					<p className="card-text text-white">Prueba ingresando tus datos</p>
+				</div>
 			</div>
-			<p>
-				This boilerplate comes with lots of documentation:{" "}
-				<a href="https://github.com/4GeeksAcademy/react-flask-hello/tree/95e0540bd1422249c3004f149825285118594325/docs">
-					Read documentation
-				</a>
-			</p>
+			
 		</div>
+
 	);
 };
