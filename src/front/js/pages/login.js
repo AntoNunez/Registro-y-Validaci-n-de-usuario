@@ -1,10 +1,8 @@
-import React, { useContext } from "react";
-import { Context } from "../store/appContext";
+import React from "react";
 import Login from "../component/login";
 
 
 export const Page_login = () => {
-  const { store, actions } = useContext(Context);
 
   return (
     <>
@@ -13,7 +11,7 @@ export const Page_login = () => {
         lg_remember="Recuerdame."
         text_preg2="No tienes cuenta?"
         boton_newAccount="/register "
-        text_linkNew="crear cuenta"
+        text_linkNew="crear cuenta."
       />
     </>
   );

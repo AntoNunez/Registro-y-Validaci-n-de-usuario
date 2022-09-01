@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "../../styles/login.css";
@@ -47,11 +47,6 @@ const Login = (props) => {
     }
   };
 
- // useEffect(() => {
- //   if (store.currentUser !== null) {
- //     navigate("/profile");
-  //  }
-  //}, [store.currentUser]);
   return (
     <div className="container-md">
 
@@ -80,15 +75,15 @@ const Login = (props) => {
             onChange={handleChange}
           />
         </div>
-        <div className="etc-login-form">
+        <div className="etc-login-form mt-3">
           <input
             type="checkbox"
-            className="box"
+            className="box me-2"
             id="lg_remember"
             name="lg_remember"
           />
           <label form="lg_remember">{props.lg_remember}</label>
-          <p>
+          <p className="mt-2">
             {props.text_preg2}{" "}
             <a href={props.boton_newAccount}>{props.text_linkNew}</a>
           </p>

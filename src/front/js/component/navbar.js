@@ -6,7 +6,7 @@ export const Navbar = () => {
   const { store, actions } = useContext(Context);
   return (
     <div className="container-fluid m-0 p-0 ">
-      <nav className="navbar shadow p-3 mb-5 bg-body rounded bg-opacity-10">
+      <nav className="navbar bg-dark shadow p-3 mb-5 bg-body rounded bg-opacity-50">
         <div className="container d-flex">
         <Link to="/" className="nav-link active text-white " href="/home">
                 Home

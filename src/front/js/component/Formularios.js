@@ -14,7 +14,7 @@ min-height: 500px;
 height: auto;
 border-radius: 5px;
 margin: 2% auto;
-box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+box-shadow: 0 20px 50px hsla(30, 2%, 19%, 0.699);
 padding: 2%;
 background-image: linear-gradient(-225deg, #f5fbb4a7 50%, #8bb1a27d 50%);
 `;
@@ -130,7 +130,7 @@ font-size: 1rem;
 
 	&:hover{
 		color: #fff;
-		box-shadow: 2px 2px 3px #d1d1d1, -2px -2px 3px #ffffff;
+		box-shadow: 2px 2px 3px hsla(30, 2%, 19%, 0.699), -2px -2px 3px hsla(30, 2%, 19%, 0.699);
  transform: translateY(-2px);
 	}
 	
